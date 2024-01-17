@@ -85,7 +85,7 @@ Explanation of code step-by-step:
 
 ## Output
 
-`![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/8af7e329-3ac4-4c8f-b7eb-5ae2ec68a2d5)`
+![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/8af7e329-3ac4-4c8f-b7eb-5ae2ec68a2d5)
 
 # PyPoll Challenge
 
