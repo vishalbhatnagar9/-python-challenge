@@ -20,7 +20,8 @@ for entry in election_data:
         candidate_votes[unique_candidate] += 1
     else:
         candidate_votes[unique_candidate] = 1
-
+        
+# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean. Output is written directly to txt file. 
 # Print the election results
 # print("Election Results")
 # print("-------------------------")
