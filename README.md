@@ -23,7 +23,7 @@ Explanation of code step-by-step:
 
 2.	Loading the data set from budget_data.csv by assigning file path and reading the budget_data.csv file through that file path in to the “data” 
 
-	‘file_path = r"Module 3\Challenge\PyBank\Resources\budget_data.csv"  
+	`file_path = r"Module 3\Challenge\PyBank\Resources\budget_data.csv"  
  	with open(file_path, 'r') as file:
  	reader = csv.DictReader(file)
  	data = list(reader)`
