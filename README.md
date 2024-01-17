@@ -187,4 +187,8 @@ Explanation of code step-by-step:
      `output_file.write(f"Winner: {winner}\n")
       output_file.write("-------------------------\n")`
 
+## Output
+
+![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/105266e5-be85-4b60-be46-5608543455a7)
+
 
