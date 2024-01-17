@@ -35,7 +35,7 @@ for i in range(total_months):
 # Calculate Average Change
 avg_change /= (total_months - 1)
 
-# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file. 
+# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean. Output is written directly to txt file. 
 #print("Financial Analysis")
 #print("----------------------------")
 #print(f"Total Months: {total_months}")
