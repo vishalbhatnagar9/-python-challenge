@@ -36,13 +36,13 @@ for i in range(total_months):
 avg_change /= (total_months - 1)
 
 # Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean. Output is written directly to txt file. 
-#print("Financial Analysis")
-#print("----------------------------")
-#print(f"Total Months: {total_months}")
-#print(f"Total: ${net_total}")
-#print(f"Average Change: ${average_change:.2f}")
-#print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
-#print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
+# print("Financial Analysis")
+# print("----------------------------")
+# print(f"Total Months: {total_months}")
+# print(f"Total: ${net_total}")
+# print(f"Average Change: ${average_change:.2f}")
+# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
+# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
 
 # Print Analysis to budget_data.txt
 output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\budget_data.txt"  
