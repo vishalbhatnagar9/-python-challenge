@@ -1,7 +1,7 @@
-### Module 3 Challenge
+# Module 3 Challenge
 ## PyBank Challenge
 
-# Problem Statement:
+### Problem Statement:
 Create Python script to analyze financial records from data given in budget_data.csv.  The following needs to be deduced by the code from the data provided:
 From Module Challenge:
 •	The total number of months included in the dataset
@@ -31,17 +31,17 @@ data = pd.read_csv(file_path)’
 ` greatest_decrease_date = data.loc[data['Profit/Losses'].idxmin(), 'Date']`
 10.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
 ` # Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
-# print("Financial Analysis")
-# print("----------------------------")
-# print(f"Total Months: {total_months}")
-# print(f"Total: ${net_total}")
-# print(f"Average Change: ${avg_change:.2f}")
-# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
-# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
+  # print("Financial Analysis")
+  # print("----------------------------")
+  # print(f"Total Months: {total_months}")
+  # print(f"Total: ${net_total}")
+  # print(f"Average Change: ${avg_change:.2f}")
+  # print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
+  # print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
 
 11.	Defined printing results to budget_data.txt file.
-` output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\budget_data.txt"
-with open(output_file_path, 'w') as output_file:
+    `output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\budget_data.txt"
+    with open(output_file_path, 'w') as output_file:
     output_file.write("Financial Analysis\n")
     output_file.write("----------------------------\n")
     output_file.write(f"Total Months: {total_months}\n")
@@ -76,10 +76,10 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 ` candidate_votes[candidate] = len(election_data[election_data["Candidate"] == candidate])`
 7.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
 ` # Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file. 
-#print("Election Results")
-#print("-------------------------")
-#print(f"Total Votes: {total_votes}")
-#print("-------------------------")`
+  #print("Election Results")
+  #print("-------------------------")
+  #print(f"Total Votes: {total_votes}")
+  #print("-------------------------")`
 
 8.	Second loop is defined to loop through “unique_candidate” values and evaluate their corresponding percentage of votes and votes count values. Please note: As noticed in how the data is to be presented, the percentage value has 3 decimal places which is defined in the code. 
 ` for candidate in unique_candidates:
@@ -89,7 +89,7 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 9.	The following code defined output to the election_data.txt file. 
 
 ` output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\election_data.txt"
-with open(output_file_path, 'w') as output_file:
+  with open(output_file_path, 'w') as output_file:
     # Writing election results to the file
     output_file.write("Election Results\n")
     output_file.write("-------------------------\n")
