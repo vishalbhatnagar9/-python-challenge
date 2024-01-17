@@ -83,6 +83,10 @@ Explanation of code step-by-step:
     	  output_file.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})\n")
    	  output_file.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\n")`
 
+## Output
+
+![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/8af7e329-3ac4-4c8f-b7eb-5ae2ec68a2d5)
+
 # PyPoll Challenge
 
 ## Problem Statement:
@@ -182,5 +186,9 @@ Explanation of code step-by-step:
     `# Writing the winner to the file`
      `output_file.write(f"Winner: {winner}\n")
       output_file.write("-------------------------\n")`
+
+## Output
+
+![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/105266e5-be85-4b60-be46-5608543455a7)
 
 

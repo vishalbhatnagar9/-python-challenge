@@ -17,7 +17,7 @@ candidate_votes = {}
 for candidate in unique_candidates:
     candidate_votes[candidate] = len(election_data[election_data["Candidate"] == candidate])
 
-# Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file. 
+# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean. Output is directly printed to txt file.  
 #print("Election Results")
 #print("-------------------------")
 #print(f"Total Votes: {total_votes}")
