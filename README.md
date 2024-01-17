@@ -65,13 +65,20 @@ Explanation of code step-by-step:
 11.	The following code is commented out but was used to check if its working locally in the terminal. Instead the following code is used to output the results directly in to the budget_data.txt file. 
 
 	`# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean. Output is written directly to txt file. `
-	`#print("Financial Analysis")`
-	`#print("----------------------------")`
-	`#print(f"Total Months: {total_months}")`
-	`#print(f"Total: ${net_total}")`
-	`#print(f"Average Change: ${average_change:.2f}")`
-	`#print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
-	`#print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
+	
+ 	`#print("Financial Analysis")`
+	
+ 	`#print("----------------------------")`
+	
+ 	`#print(f"Total Months: {total_months}")`
+	
+ 	`#print(f"Total: ${net_total}")`
+	
+ 	`#print(f"Average Change: ${average_change:.2f}")`
+	
+ 	`#print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
+	
+ 	`#print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
 
 12.	The output is then defined to be printed in to the budget_data.txt file.
 
@@ -134,22 +141,26 @@ Explanation of code step-by-step:
 13.	The following code is commented out but was used to check if its working locally in the terminal. Instead the following code is used to output the results directly in to the election_data.txt file. 
 
 	`# Print the election results`
-  	`# print("Election Results")`
- 	`# print("-------------------------")`
- 	`# print(f"Total Votes: {total_votes}")`
- 	`# print("-------------------------")`
 
-14.	The second loop function determines the percentage of votes out of the total votes that each unique candidate received and presented to three decimal places
+	`# print("Election Results")`
+ 	
+  	`# print("-------------------------")`
+ 	
+  	`# print(f"Total Votes: {total_votes}")`
+ 	
+  	`# print("-------------------------")`
+
+15.	The second loop function determines the percentage of votes out of the total votes that each unique candidate received and presented to three decimal places
 
 	`for candidate, votes in candidate_votes.items():
     		percentage = (votes / total_votes) * 100
     		(f"{candidate}: {percentage:.3f}% ({votes})")`
 
-15.	The winner is determined by calculating the candidate with the maximum number of votes received
+16.	The winner is determined by calculating the candidate with the maximum number of votes received
 
 	` winner = max(candidate_votes, key=candidate_votes.get)`
 
-16.	Finally, the output path is defined to write the results to election_data.txt
+17.	Finally, the output path is defined to write the results to election_data.txt
 
 	`for candidate, votes in candidate_votes.items():
         	percentage = (votes / total_votes) * 100
