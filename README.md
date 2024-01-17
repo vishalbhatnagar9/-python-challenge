@@ -47,23 +47,24 @@ data = pd.read_csv(file_path)’
 
 10.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
 
-  `# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
+   `# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
 
-  `# print("Financial Analysis")`
+   `# print("Financial Analysis")`
   
-  `# print("----------------------------")`
+   `# print("----------------------------")`
   
-  `# print(f"Total Months: {total_months}")`
+   `# print(f"Total Months: {total_months}")`
   
- ` # print(f"Total: ${net_total}")`
+   `# print(f"Total: ${net_total}")`
  
-  `# print(f"Average Change: ${avg_change:.2f}")`
+   `# print(f"Average Change: ${avg_change:.2f}")`
   
-  `# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
+   `# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
   
-  `# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
+   `# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
 
 11.	Defined printing results to budget_data.txt file.
+    
     `output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\budget_data.txt"
     with open(output_file_path, 'w') as output_file:
     output_file.write("Financial Analysis\n")
