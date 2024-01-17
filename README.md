@@ -162,9 +162,9 @@ Explanation of code step-by-step:
 
 17.	Finally, the output path is defined to write the results to election_data.txt
 
-	`for candidate, votes in candidate_votes.items():
-        	percentage = (votes / total_votes) * 100
-        	output_file.write(f"{candidate}: {percentage:.3f}% ({votes})\n")
-        	output_file.write("-------------------------\n")
-    		output_file.write(f"Winner: {winner}\n")
-    		output_file.write("-------------------------\n")`
+	`for candidate, votes in candidate_votes.items():`
+        	`percentage = (votes / total_votes) * 100`
+        	`output_file.write(f"{candidate}: {percentage:.3f}% ({votes})\n")`
+        	`output_file.write("-------------------------\n")`
+    		`output_file.write(f"Winner: {winner}\n")`
+    		`output_file.write("-------------------------\n")`
