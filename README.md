@@ -96,11 +96,11 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 ` candidate_votes[candidate] = len(election_data[election_data["Candidate"] == candidate])`
 
 7.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
-` # Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file. 
-  #print("Election Results")
-  #print("-------------------------")
-  #print(f"Total Votes: {total_votes}")
-  #print("-------------------------")`
+` # Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file.` 
+  `#print("Election Results")`
+  `#print("-------------------------")`
+  `#print(f"Total Votes: {total_votes}")`
+  `#print("-------------------------")`
 
 8.	Second loop is defined to loop through “unique_candidate” values and evaluate their corresponding percentage of votes and votes count values. Please note: As noticed in how the data is to be presented, the percentage value has 3 decimal places which is defined in the code. 
 ` for candidate in unique_candidates:
@@ -118,8 +118,8 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 
 11.	The following code defined output to the election_data.txt file. 
 
-`output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\election_data.txt"
-  with open(output_file_path, 'w') as output_file:
+    `output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\election_data.txt"
+    with open(output_file_path, 'w') as output_file:
     # Writing election results to the file
     output_file.write("Election Results\n")
     output_file.write("-------------------------\n")
