@@ -5,6 +5,7 @@
 
 Create Python script to analyze financial records from data given in budget_data.csv.  The following needs to be deduced by the code from the data provided:
 From Module Challenge:
+
 •	The total number of months included in the dataset
 •	The net total amount of "Profit/Losses" over the entire period
 •	The changes in "Profit/Losses" over the entire period, and then the average of those changes
@@ -41,14 +42,15 @@ data = pd.read_csv(file_path)’
 ` greatest_decrease_date = data.loc[data['Profit/Losses'].idxmin(), 'Date']`
 
 10.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
+
 ` # Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
-  # print("Financial Analysis")
-  # print("----------------------------")
-  # print(f"Total Months: {total_months}")
-  # print(f"Total: ${net_total}")
-  # print(f"Average Change: ${avg_change:.2f}")
-  # print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")
-  # print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
+  `# print("Financial Analysis")`
+  `# print("----------------------------")`
+  `# print(f"Total Months: {total_months}")`
+ ` # print(f"Total: ${net_total}")`
+  `# print(f"Average Change: ${avg_change:.2f}")`
+  `# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
+  `# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
 
 11.	Defined printing results to budget_data.txt file.
     `output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\budget_data.txt"
@@ -96,13 +98,14 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 ` candidate_votes[candidate] = len(election_data[election_data["Candidate"] == candidate])`
 
 7.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
-` # Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file.` 
+
+  `# Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file.` 
   `#print("Election Results")`
   `#print("-------------------------")`
   `#print(f"Total Votes: {total_votes}")`
   `#print("-------------------------")`
 
-8.	Second loop is defined to loop through “unique_candidate” values and evaluate their corresponding percentage of votes and votes count values. Please note: As noticed in how the data is to be presented, the percentage value has 3 decimal places which is defined in the code. 
+9.	Second loop is defined to loop through “unique_candidate” values and evaluate their corresponding percentage of votes and votes count values. Please note: As noticed in how the data is to be presented, the percentage value has 3 decimal places which is defined in the code. 
 ` for candidate in unique_candidates:
     percentage = (candidate_votes[candidate] / total_votes) * 100
     (f"{candidate}: {percentage:.3f}% ({candidate_votes[candidate]})")`
@@ -111,29 +114,30 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 `winner = max(candidate_votes, key=candidate_votes.get)`
 
 10. The following code has been commented out but was written to test if the code is working locally on the terminal. 
-` #print("-------------------------")
-   #print(f"Winner: {winner}")
-   #print("-------------------------")`
+  
+   `#print("-------------------------")`
+   `#print(f"Winner: {winner}")`
+   `#print("-------------------------")`
 
 
 11.	The following code defined output to the election_data.txt file. 
 
     `output_file_path = r"C:\Users\shrut\OneDrive\Desktop\Bootcamp\Module 3\Challenge\python-challenge\Analysis\election_data.txt"
     with open(output_file_path, 'w') as output_file:
-    # Writing election results to the file
+   `# Writing election results to the file`
     output_file.write("Election Results\n")
     output_file.write("-------------------------\n")
     output_file.write(f"Total Votes: {total_votes}\n")
     output_file.write("-------------------------\n")
    
-    # Writting candidate information to file
+    `# Writting candidate information to file`
     for candidate in unique_candidates:
         percentage = (candidate_votes[candidate] / total_votes) * 100
         output_file.write(f"{candidate}: {percentage:.3f}% ({candidate_votes[candidate]})\n")
    
     output_file.write("-------------------------\n")
     
-    # Writing the winner to the file
+    `# Writing the winner to the file`
     output_file.write(f"Winner: {winner}\n")
     output_file.write("-------------------------\n")
 
