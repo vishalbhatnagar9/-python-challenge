@@ -7,9 +7,13 @@ Create Python script to analyze financial records from data given in budget_data
 From Module Challenge:
 
 •	The total number of months included in the dataset
+
 •	The net total amount of "Profit/Losses" over the entire period
+
 •	The changes in "Profit/Losses" over the entire period, and then the average of those changes
+
 •	The greatest increase in profits (date and amount) over the entire period
+
 •	The greatest decrease in profits (date and amount) over the entire period
 
 Explanation of code step-by-step:
@@ -43,13 +47,20 @@ data = pd.read_csv(file_path)’
 
 10.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
 
-` # Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
+  `# Print Analysis to test if code is working on Visual Studio. Please note: The following is commented out to keep code clean and output directly to txt file.
+
   `# print("Financial Analysis")`
+  
   `# print("----------------------------")`
+  
   `# print(f"Total Months: {total_months}")`
+  
  ` # print(f"Total: ${net_total}")`
+ 
   `# print(f"Average Change: ${avg_change:.2f}")`
+  
   `# print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})")`
+  
   `# print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")`
 
 11.	Defined printing results to budget_data.txt file.
@@ -69,10 +80,15 @@ data = pd.read_csv(file_path)’
 
 Using data provided in election_data.csv to determine the following.
 From Module Challenge:
+
 •	The total number of votes cast
+
 •	A complete list of candidates who received votes
+
 •	The percentage of votes each candidate won
+
 •	The total number of votes each candidate won
+
 •	The winner of the election based on popular vote
 
 Explanation of code step-by-step:
@@ -92,17 +108,25 @@ Explanation of code step-by-step:
 ` for candidate in unique_candidates:`
 
 6.	Captures votes counts for each candidate and places in defined “candidate_votes” dictionary. The logic here is:
+7.	
 a.	The code checks if the candidate value is equal to the candidate value defined in the loop, which is “unique_candidates”.
+
 b.	The code filters only those rows in the dataframe where the candidate name is equal to the candidate name defined in the loop. 
+
 c.	Calculates the length of the filtered data from above and stores in the pre-defined “candidate_votes” dictionary.
 ` candidate_votes[candidate] = len(election_data[election_data["Candidate"] == candidate])`
 
-7.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
+
+9.	The following code has been commented out but was written to test if the code is working locally on the terminal. 
 
   `# Print the election results to Visual code to test if code is working. Please note: The following is commented out to keep code clean and output directly to txt file.` 
+  
   `#print("Election Results")`
+  
   `#print("-------------------------")`
+  
   `#print(f"Total Votes: {total_votes}")`
+  
   `#print("-------------------------")`
 
 9.	Second loop is defined to loop through “unique_candidate” values and evaluate their corresponding percentage of votes and votes count values. Please note: As noticed in how the data is to be presented, the percentage value has 3 decimal places which is defined in the code. 
@@ -116,7 +140,9 @@ c.	Calculates the length of the filtered data from above and stores in the pre-d
 10. The following code has been commented out but was written to test if the code is working locally on the terminal. 
   
    `#print("-------------------------")`
+   
    `#print(f"Winner: {winner}")`
+   
    `#print("-------------------------")`
 
 
