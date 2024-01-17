@@ -83,6 +83,10 @@ Explanation of code step-by-step:
     	  output_file.write(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_increase})\n")
    	  output_file.write(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})\n")`
 
+## Output
+
+`![image](https://github.com/vishalbhatnagar9/python-challenge/assets/151709892/8af7e329-3ac4-4c8f-b7eb-5ae2ec68a2d5)`
+
 # PyPoll Challenge
 
 ## Problem Statement:
